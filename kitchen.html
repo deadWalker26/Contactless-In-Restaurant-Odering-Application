@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awadh Dastarkhwan — Kitchen Screen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kitchen.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Awadh Dastarkhwan <span>· Kitchen Screen</span></div>
+  <div class="clock" id="clock" type="24-hour"></div>
+</header>
+
+<main class="board">
+  <section class="column" data-status="pending">
+    <h2>New Tickets <span class="count" id="count-pending">0</span></h2>
+    <div class="cards" id="cards-pending"></div>
+  </section>
+
+  <section class="column" data-status="preparing">
+    <h2>In the Kitchen <span class="count" id="count-preparing">0</span></h2>
+    <div class="cards" id="cards-preparing"></div>
+  </section>
+
+  <section class="column" data-status="served">
+    <h2>Served <span class="count" id="count-served">0</span></h2>
+    <div class="cards" id="cards-served"></div>
+  </section>
+</main>
+
+<script src="shared.js"></script>
+<script src="kitchen.js"></script>
+</body>
+</html>
